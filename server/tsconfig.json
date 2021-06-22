@@ -1,0 +1,29 @@
+{
+   "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "rootDir": "src",
+      "outDir": "dist",
+      "sourceMap": true,
+      "resolveJsonModule": true,
+      "lib": ["es6"],
+      "esModuleInterop": true,
+      "baseUrl": "./src",
+      "paths": {
+         "@Types/*": ["types/*"],
+         "@Types": ["types"],
+         "@services/*": ["services/*"],
+         "@services": ["services"],
+         "*": [
+            "node_modules/*",
+            "src/types/*"
+         ]
+      }
+   },
+   "include": [
+      "src/**/*"
+   ],
+   "exclude": [
+      "node_modules"
+   ]
+}
